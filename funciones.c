@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include "funciones.h"
 
@@ -5,9 +6,9 @@ void agregarCantidad(int cantidades[]) {
     int indice, cantidad;
     char continuar;
 
-    printf("Seleccione el producto a agregar cantidad:\n");
+    printf("\n\n -----PRODUCTOS DISPONIBLES----:\n");
     printf("1. AUDIFONOS\n2. CELULARES\n3. TABLETS\n4. CALCULADORAS\n5. CAMARAS\n");
-    printf("Ingrese el numero del producto: ");
+    printf("Ingrese el numero del producto para agregarlo: ");
     scanf("%d", &indice);
 
     if (indice < 1 || indice > 5) {
@@ -36,7 +37,7 @@ void eliminarProducto(int cantidades[]) {
     int indice;
     char continuar;
 
-    printf("Seleccione el producto a eliminar:\n");
+    printf("Seleccione el producto para eliminar:\n");
     printf("1. AUDIFONOS\n2. CELULARES\n3. TABLETS\n4. CALCULADORAS\n5. CAMARAS\n");
     printf("Ingrese el numero del producto: ");
     scanf("%d", &indice);
